@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuida Un Nopal - Adoptar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+</head>
+<body>
+    <header><br>
+        <h1><strong>"Cuidado De Nopales"</strong></h1>
+    </header>
+    <main>
+        <nav class="menu" id="menu">
+            <ul>
+                <!-- ?No borrar -->
+                <button onclick="menuOpciones('index.html?')"><b>Inicio</b></button>
+                <button onclick="menuOpciones('esenciales.html?')"><b>Esenciales</b></button>
+                <button onclick="menuOpciones('relevantes.html?')"><b>Relevantes</b></button>
+                <button id="seleccionado" onclick="menuOpciones('formulario.html?')"><b>Adoptar Nopal</b></button>
+                <button onclick="menuOpciones('creditos.html?')"><b>Creditos</b></b>
+                <button onclick="menuOpciones('terminos.html?')"><b>Términos</b></button>
+                <button onclick="menuOpciones('cuidados.html?')"><b>Cuidado de Nopales</b></button>
+                
+            </ul>
+        </nav>
+        <br><br>
+        <form>
+
+            <fieldset id="pregunta">
+                <legend>Escoge Una Opción</legend>
+                <label>¿Eres estudiante del CETIS 42?</label><br>
+                <button type="button" onclick="cambiar('pregunta','f2')">Si</button>
+                <button type="button" onclick="cambiar('pregunta','f1')">No</button>
+            </fieldset>
+
+            <fieldset id="f1">
+                <legend>Adoptar Un nopal - Persona</legend><br>
+                
+                <label for="nombrePersona">Nombre / Nombres: </label><br>
+                <input type="text" id="nombrePersona" placeholder="Nombre / Nombres" maxlength="20"><br><br>
+                
+                <label for="apellidoPaternoPersona">Apellido Paterno: </label><br>
+                <input type="text" id="apellidoPaternoPersona" placeholder="Apellido Paterno" maxlength="20"><br><br>
+                
+                <label for="apellidoMaternoPersona">Apellido Materno: </label><br>
+                <input type="text" id="apellidoMaternoPersona" placeholder="Apellido Materno" maxlength="20"><br><br>
+                
+                <label for="alcaldiaPersona">Alcaldía: </label><br>
+                <input type="text" id="alcaldiaPersona" placeholder="Alcaldía" maxlength="20"><br><br>
+                
+                <label for="coloniaPersona">Colonia: </label><br>
+                <input type="text" id="coloniaPersona" placeholder="Colonia" maxlength="20"><br><br>
+                
+                <label for="codigoPostalPersona">Codigo Postal C.P: </label><br>
+                <input type="number" id="codigoPostalPersona" placeholder="C.P" maxlength="5"><br><br>
+
+                <label for="direccionPersona">Dirección: </label><br><br>
+                <textarea rows="20" cols="50" placeholder="Direccion, Calle, N. exterior, N. Interior" id="direccionPersona" maxlength="100"></textarea><br><br>
+                
+                <button type="button" class="siguienteform" onclick="enviar(1)">Siguiente</button><br><br>
+
+                <label for="">¿Eres del CETIS 42?</label>
+                <button type="button" 
+                onclick="cambiar('f1','f2')"
+                class="entrar">Entra aquí</button><br><br>
+            
+            </fieldset>
+            
+            <fieldset id="f2">
+                <legend>Adoptar Un Nopal - Alumno</legend><br>
+                
+                <label for="nombreAlumno">Nombre / Nombres: </label><br>
+                <input type="text" id="nombreAlumno" placeholder="Nombre / Nombres" maxlength="20"><br><br>
+                
+                <label for="apellidoPaternoAlumno">Apellido Paterno: </label><br>
+                <input type="text" id="apellidoPaternoAlumno" placeholder="Apellido Paterno" maxlength="20"><br><br>
+                
+                <label for="apellidoMaternoAlumno">Apellido Materno: </label><br>
+                <input type="text" id="apellidoMaternoAlumno" placeholder="Apellido Materno" maxlength="20"><br><br>
+                
+                <label for="numeroControlAlumno">Numero De Control: </label><br>
+                <input type="number" id="numeroControlAlumno" placeholder="Numero De Control"><br><br>
+                
+                <button type="button" class="siguienteform" onclick="enviar(2)">Siguiente</button><br><br>
+                <label for="">¿No eres del CETIS 42?</label>
+                <button type="button" 
+                onclick="cambiar('f2','f1')" 
+                class="entrar">Entra aquí</button><br><br>
+            </fieldset>
+
+            <fieldset id="compromiso">
+                <legend>Me comprometo</legend>
+                <h2>Yo</h2>
+                <p>Me comprometo a cuidar y proteger el nopal asignado, guiado por mis principios morales y éticos, asegurando su bienestar y contribuyendo a la conservación del medio ambiente.</p>
+        <button type="button" class="siguienteform" onclick="cambiar('compromiso','certificado');alert('Tiene que imprimir el certificado en horizontal, firmarlo y mandarlo por whatsapp para hacer valida su adopción')">Acepto</button><br><br>
+                <button type="button" class="siguienteform" onclick="window.location.replace('index.html')">No Acepto</button>
+            </fieldset>
+            
+        </form>
+        <div id="filtrocertificado">
+            <div id="certificado">
+                <h1>Certificado de Adopción</h1>
+                <p>Este certificado se otorga a</p>
+                <h2 id="nombreadoptante">[Nombre del Adoptante]</h2>
+                <p>por adoptar un nopal de la pagina 'Cuida Un Nopal'.</p>
+                <div class="info">
+                    <p>Fecha de adopción: <span id="fecha"></span></p>
+                </div><br>
+                <div class="firma">
+                    <p>___________________________</p>
+                    <p>Firma</p>
+                </div>
+                <button type="button" onclick="imprimir()" class="siguienteform" id="imprimir">Imprimir</button><br><br>
+            </div>
+            <div id="mensajeerror">
+                Por el momento los certificados solo estan disponibles para pantallas superiores a los 1000 pixeles
+            </div>
+        </div>
+        
+        <button onclick="window.location.replace('index.html?')" id="regresar" >Regresar</button>
+    <script src="../js/fecha.js"></script>
+
+    </main>
+    <footer id="footer">
+        <address>
+            <a href="#" id="volver">Volver al inicio</a><br><br>
+        </address>
+        <table class="menu2">
+            <tr id="n1">
+                <!-- ?No borrar -->
+                <td onclick="menuOpciones('index.html?')"><b>Inicio</b></td>
+            </tr>
+            <tr id="n2">
+                <td onclick="menuOpciones('esenciales.html?')"><b>Esenciales</b></td>
+                <td onclick="menuOpciones('creditos.html?')"><b>Creditos</b></td>
+
+            </tr>
+            <tr>
+                <td onclick="menuOpciones('relevantes.html?')"><b>Relevantes</b></td>
+                <td onclick="menuOpciones('terminos.html?')"><b>Términos y Condiciones</b></td>
+
+            </tr>
+            <tr>
+                <td id="seleccionado" onclick="menuOpciones('formulario.html?')"><b>Adoptar Nopal</b></td>
+                <td onclick="menuOpciones('cuidados.html?')"><b>Cuidado de Nopales</b></td>
+            </tr>
+
+        </table>
+        <div id="contactanos">
+            <label>Contactanos</label><br><br>
+            <a href="https://www.facebook.com/a.b.r.a.h.a.m.ctm.0/" target="_blank"><img src="../img/fb.png" alt="fb"> Abraham SG</a><br><br>
+            <a href="https://www.facebook.com/zalvdor.zalvador" target="_blank"><img src="../img/fb.png" alt="fb"> Salvador Flores</a><br><br>
+            <a href="https://www.facebook.com/cetis42.cdmx" target="_blank"><img src="../img/fb.png" alt="fb"> CETIs No. 42</a>
+        </div>
+    </footer>
+</body>
+</html>
