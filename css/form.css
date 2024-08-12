@@ -1,0 +1,110 @@
+.separacionesform{
+    display: block;
+}
+form{
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset,legend{
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid green;
+    background-color: rgb(235, 218, 218);
+
+}
+main{
+    min-height: 600px;
+}
+form fieldset label{
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+input{
+    font-size: 17px;
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+textarea,input{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+textarea:focus,input:focus{
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+form .entrar{
+    padding: 0px;
+    text-align: center;
+    font-size: 17px;
+    background-color: rgb(233, 221, 221);
+    border: 0;
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+    color: blue;
+}
+form button:hover{
+    transform: scale(1.05);
+}
+textarea{
+    width: 60%;
+    height: 200px;
+    resize: none;
+}
+legend{
+    font-size: 18px;
+}
+#f2,#f1,#compromiso,#certificado,#regresar,#mensajeerror{
+    display: none;
+}
+#pregunta button{
+    background-color: rgb(233, 221, 221);
+    border: none;
+    border-bottom: 3px solid green;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+.siguienteform{
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(223, 205, 205);
+}
+.siguienteform:hover{
+    transition: all 0.5s;
+}
+.siguienteform:active{
+    transition: all 0.5s;
+    transform: scale(0.95);
+}
+@media(max-width: 1000px) {
+    form{
+        width: 98%;
+    }
+    #mensajeerror{
+        display: block;
+    }
+    #imprimir{
+        display: none;
+    }
+}
+
+#certificado{
+    margin: auto;
+    width: 60%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    border: 5px solid rgb(24, 180, 24);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#certificado h1{
+    color: rgb(24, 146, 24);
+}
