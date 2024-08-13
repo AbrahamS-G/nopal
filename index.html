@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuida Un Nopal - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/menu.js"></script>
+</head>
+<body>
+    <header>
+        <br>
+        <h1><strong>Cuidado De Nopales</strong></h1>
+        <label for="a_menu" id="menu-button"> ☰ </label>
+    </header>
+    <main>
+        <input type="checkbox" id="a_menu">
+        <nav class="menu">
+            <ul>
+                <li><button id="seleccionado" onclick="menuOpciones('index.html?')"><b>Inicio</b></button></li>
+                <li><button onclick="menuOpciones('p/esenciales.html?')"><b>Esenciales</b></button></li>
+                <li><button onclick="menuOpciones('p/relevantes.html?')"><b>Relevantes</b></button></li>
+                <li><button onclick="menuOpciones('p/formulario.html?')"><b>Adoptar Nopal</b></button></li>
+                <li><button onclick="menuOpciones('p/creditos.html?')"><b>Creditos</b></button></li>
+                <li><button onclick="menuOpciones('p/terminos.html?')"><b>Términos</b></button></li>
+                <li><button onclick="menuOpciones('p/cuidados.html?')"><b>Cuidado de Nopales</b></button></li>
+                <li><button onclick="menuOpciones('p/warning.html?')"><b>Galería</b></button></li>
+            </ul>
+        </nav>
+
+        <div class="slider">
+            <ul>
+                <!-- ?No borrar -->
+                <li><img src="img/nopal1.jpg" alt="1"></li>
+                <li><img src="img/np1.png" alt="2"></li>
+                <li><img src="img2/7.jpg" alt="3"></li>
+                <li><img src="img/np1.png" alt="4"></li>
+                <li><img src="img/nopal1.jpg" alt="5"></li>
+                <li><img src="img2/7.jpg" alt="6"></li>
+                <li><img src="img/nopal1.jpg" alt="7"></li>
+                <li><img src="img/np1.png" alt="8"></li>
+            </ul>
+        </div>
+        <div class="right-content"><h4>Pagina Creada Por:</h4><i>Abraham Salazar </i><br><strong> & </strong><br><i> Salvador Flores</i></div> 
+        <article class="left">
+            <h3>Importante</h3>
+            <h3>Esta pagina es el inicio, para ver informacion necesitas entrar en las paginas colocadas en el menu</h3>
+        </article>
+    </main>
+    <footer>
+        <address>
+            <a href="#" id="volver">Volver al inicio</a><br><br>
+            Creditos a: <br>Abraham Salazar <br> Y <br> Salvador
+        </address>
+        <table class="menu2">
+            <tr id="n1">
+                <!-- ?No borrar -->
+                <td id="seleccionado" onclick="menuOpciones('index.html?')"><b>Inicio</b></td>
+                <td onclick="menuOpciones('p/warning.html?')"><b>Galería</b></td>
+            </tr>
+            <tr id="n2">
+                <td onclick="menuOpciones('p/esenciales.html?')"><b>Esenciales</b></td>
+                <td onclick="menuOpciones('p/creditos.html?')"><b>Creditos</b></td>
+
+            </tr>
+            <tr>
+                <td onclick="menuOpciones('p/relevantes.html?')"><b>Relevantes</b></td>
+                <td onclick="menuOpciones('p/terminos.html?')"><b>Términos y Condiciones</b></td>
+
+            </tr>
+            <tr>
+                <td onclick="menuOpciones('p/formulario.html?')"><b>Adoptar Nopal</b></td>
+                <td onclick="menuOpciones('p/cuidados.html?')"><b>Cuidado de Nopales</b></td>
+            </tr>
+
+        </table>
+        <div id="contactanos">
+            <label>Contactanos</label><br><br>
+            <a href="https://www.facebook.com/a.b.r.a.h.a.m.ctm.0/" target="_blank"><img src="img/fb.png" alt="fb"> Abraham SG</a><br><br>
+            <a href="https://www.facebook.com/zalvdor.zalvador" target="_blank"><img src="img/fb.png" alt="fb"> Salvador Flores</a><br><br>
+            <a href="https://www.facebook.com/cetis42.cdmx" target="_blank"><img src="img/fb.png" alt="fb"> CETIs No. 42</a>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuida Un Nopal - Relevantes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/menu.js"></script>
+</head>
+<body>
+    <header>
+        <br>
+        <h1><strong>Cuidado De Nopales</strong></h1>
+        <label for="a_menu" id="menu-button"> ☰ </label>
+    </header>
+    <main>
+        <input type="checkbox" id="a_menu">
+        <nav class="menu">
+            <ul>
+                <li><button onclick="menuOpciones('../index.html?')"><b>Inicio</b></button></li>
+                <li><button onclick="menuOpciones('esenciales.html?')"><b>Esenciales</b></button></li>
+                <li><button id="seleccionado" onclick="menuOpciones('relevantes.html?')"><b>Relevantes</b></button></li>
+                <li><button onclick="menuOpciones('formulario.html?')"><b>Adoptar Nopal</b></button></li>
+                <li><button onclick="menuOpciones('creditos.html?')"><b>Creditos</b></button></li>
+                <li><button onclick="menuOpciones('terminos.html?')"><b>Términos</b></button></li>
+                <li><button onclick="menuOpciones('cuidados.html?')"><b>Cuidado de Nopales</b></button></li>
+                <li><button onclick="menuOpciones('warning.html?')"><b>Galería</b></button></li>
+            </ul>
+        </nav>
+
+        <h1 class="titulo">El Nopal: <br> La Planta Sagrada de México</h1>
+        <section class="publicaciones">
+
+            <!-- MARICHUY.PDF-Investigación realizada por el DR, Elhadi Yahia, J.C. Guevara Arauza 15-04-2002 -->
+         <article>
+            <h2>El Nopal como Fibra Natural</h2>
+            <p>Además de sus usos alimenticios y medicinales, el nopal ha ganado relevancia como una fuente de fibra natural. 
+                Sus pencas contienen fibras resistentes y flexibles que se pueden utilizar en la elaboración de telas, cuerdas y hasta papel artesanal. 
+                Esta aplicación sostenible del nopal contribuye a reducir la dependencia de materiales derivados del petróleo y fomenta la economía circular.</p>
+
+        </article>
+        <article>
+            <h2>Turismo Gastronómico y el Nopal</h2>
+            <p>La cocina mexicana, rica en platillos que incorporan el nopal, ha sido un imán para el turismo gastronómico en el país. 
+                Desde los tradicionales nopales asados hasta las innovadoras creaciones de chefs contemporáneos, los visitantes de todo el mundo tienen 
+                la oportunidad de disfrutar de la versatilidad culinaria de esta planta emblemática, convirtiendo al nopal en un embajador de la cultura gastronómica mexicana.</p>
+        </article>
+        <article>
+            <h2>Conservación y Protección del Nopal</h2>
+            <p>A pesar de su importancia cultural, económica y ecológica, algunas especies de nopal se encuentran amenazadas debido a la destrucción de su hábitat y la sobreexplotación. 
+                Organismos gubernamentales y organizaciones no gubernamentales trabajan en conjunto para proteger la biodiversidad de esta planta y promover su cultivo sustentable, asegurando que las generaciones futuras puedan seguir disfrutando de sus múltiples beneficios.
+            </p>
+            </article>
+        </section>
+
+        <section class="publicaciones">
+            <!--MARICHUY.PDF-Investigación realizada por el DR, Elhadi Yahia, J.C. Guevara Arauza 15-04-2002-->
+            <article>
+                <h2>El Nopal en la Arquitectura Sustentable</h2>
+                <p>Las propiedades aislantes y estructurales del nopal lo han convertido en un material de interés para la arquitectura sustentable. 
+                    Algunos proyectos innovadores han explorado el uso de pencas de nopal como material de construcción, aprovechando su resistencia y capacidad para regular la temperatura interior de las edificaciones, reduciendo así el consumo de energía y el impacto ambiental.</p>
+
+            </article>
+            <!--Sen encierra tipo un cuadro largo -->
+            <article>
+                <h2>Investigaciones sobre el Nopal</h2>
+                <p>Debido a sus numerosas propiedades y aplicaciones, el nopal ha sido objeto de diversas investigaciones científicas en campos como la agricultura, la medicina, la biotecnología y la ingeniería. 
+                    Estos estudios buscan profundizar en el conocimiento de esta planta y explorar nuevos usos potenciales que puedan beneficiar a la sociedad y al medio ambiente.</p>
+            
+            </article>
+        
+            <article>
+                <h2>El Nopal y la Identidad Cultural Mexicana</h2>
+                <p>El nopal no solo es una planta útil y versátil, sino que también se ha convertido en un símbolo profundamente arraigado en la identidad cultural mexicana. 
+                    Desde su representación en el escudo nacional hasta su presencia en la literatura, el arte y las tradiciones populares, el nopal es un recordatorio constante de las raíces indígenas 
+                    del país y de la resiliencia de un pueblo que ha sabido adaptarse y prosperar en un entorno desafiante. 
+                    Esta planta emblemática es un orgullo nacional que une a los mexicanos en torno a su riqueza natural y su herencia ancestral.</p>
+
+            </article>
+        </section>
+        
+        <div class="separacion"></div>
+
+    </main>
+    <footer>
+        <address>
+            <a href="#" id="volver">Volver al inicio</a><br><br>
+            Creditos a: <br>Abraham Salazar <br> Y <br> Salvador
+        </address>
+        <table class="menu2">
+            <tr id="n1">
+                <!-- ?No borrar -->
+                <td onclick="menuOpciones('../index.html?')"><b>Inicio</b></td>
+                <td onclick="menuOpciones('warning.html?')"><b>Galería</b></td>
+            </tr>
+            <tr id="n2">
+                <td onclick="menuOpciones('esenciales.html?')"><b>Esenciales</b></td>
+                <td onclick="menuOpciones('creditos.html?')"><b>Creditos</b></td>
+
+            </tr>
+            <tr>
+                <td id="seleccionado" onclick="menuOpciones('relevantes.html?')"><b>Relevantes</b></td>
+                <td onclick="menuOpciones('terminos.html?')"><b>Términos y Condiciones</b></td>
+
+            </tr>
+            <tr>
+                <td onclick="menuOpciones('formulario.html?')"><b>Adoptar Nopal</b></td>
+                <td onclick="menuOpciones('cuidados.html?')"><b>Cuidado de Nopales</b></td>
+            </tr>
+
+        </table>
+        <div id="contactanos">
+            <label>Contactanos</label><br><br>
+            <a href="https://www.facebook.com/a.b.r.a.h.a.m.ctm.0/" target="_blank"><img src="../img/fb.png" alt="fb"> Abraham SG</a><br><br>
+            <a href="https://www.facebook.com/zalvdor.zalvador" target="_blank"><img src="../img/fb.png" alt="fb"> Salvador Flores</a><br><br>
+            <a href="https://www.facebook.com/cetis42.cdmx" target="_blank"><img src="../img/fb.png" alt="fb"> CETIs No. 42</a>
+        </div>
+    </footer>
+</body>
+</html> 
